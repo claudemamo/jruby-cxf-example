@@ -44,6 +44,6 @@ hello_world = HelloWorld.new('/hello-world')
 server = org.eclipse.jetty.server.Server.new(8080)
 contexts = org.eclipse.jetty.server.handler.ContextHandlerCollection.new
 server.set_handler(contexts)
-rootContext = org.eclipse.jetty.servlet.ServletContextHandler.new(contexts, "/")
-rootContext.addServlet(org.eclipse.jetty.servlet.ServletHolder.new(hello_world), "/*")
+root_context = org.eclipse.jetty.servlet.ServletContextHandler.new(contexts, "/")
+root_context.addServlet(org.eclipse.jetty.servlet.ServletHolder.new(hello_world), "/*")
 server.start
