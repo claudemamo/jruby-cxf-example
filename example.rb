@@ -3,7 +3,7 @@ require 'jruby_cxf'
 class Animal
   include CXF::ComplexType
  
-  member :type, :string
+  member :kind, :string
  
   namespace 'http://opensourcesoftwareandme.blogspot.com'
 end  
